@@ -44,7 +44,7 @@ export const validateOrderBody = celebrate({
         }),
         phone: Joi.string().required().pattern(phoneRegExp).messages({
             'string.empty': 'Не указан телефон',
-            'srting.pattern.base': 'Неверный формат телефона',
+            'srting.pattern.base': 'Невалидный формат телефона',
         }),
         address: Joi.string().required().messages({
             'string.empty': 'Не указан адрес',
